@@ -8,14 +8,13 @@
   <body>
     <textarea id="source">
 
-
 class: center, middle, inverse
 layout: true
 
 ---
 
-# Getting functional with Clojurescript
-A Lisp for the browser
+# Making games with Clojurescript
+Slides: [cblop.github.io/clojure-dojo-1](https://cblop.github.io/clojure-dojo-1)
 
 ![Default-aligned-image](img/Clojure-Logo.png)
 
@@ -87,52 +86,6 @@ class: center, middle, inverse
 ![Default-aligned-image](img/tree-dark.png)
 
 ---
-class: center, middle, inverse
-
-# OK, so what's Lisp?
-
----
-
-# Lisp
-
-- One of the oldest programming languages
-- Designed in 1958 (!) by John McCarthy
-- Multi-paradigm (esp. functional programming)
-- Encourages meta-programming
-- Most popular dialects: Common Lisp, Scheme
-- ...and now Clojure!
-
----
-class: inverse
-## Lots of Irritating, Silly Parentheses
-    ;; unreadable
-    (defn dot-product [xs ys] (loop [acc 0.0, xr
-    xs, yr ys] (if (or (empty? xr) (empty? yr)) acc
-    (recur (+ acc (* (first xr) (first yr))) (rest
-    xr) (rest yr)))))
-
-
----
-class: inverse
-## Lots of Irritating, Silly Parentheses
-    ;; much better
-    (defn dot-product [xs ys]
-        (loop [acc 0.0, xr xs, yr ys]
-           (if (or (empty? xr) (empty? yr))
-              acc
-              (recur (+ acc (* (first xr) (first yr)))
-                     (rest xr)
-                     (rest yr)))))
-
----
-
-class: center, middle, inverse
-
-# Relevant XKCD
-
-![Default-aligned-image](img/lisp_cycles.png)
-
----
 
 class: center, middle, inverse
 
@@ -158,59 +111,84 @@ class: center, middle, inverse
 ---
 class: center, middle, inverse
 
-# What is "live coding"?
+# Let's make a game!
+
+---
+
+# CLJS Live Game Demo
+
+- This demo was made by Chris Granger, creator of Light Table
+- Play with it online at [bristolclojure.herokuapp.com](http://bristolclojure.herokuapp.com)
+- Hack at the code: [github.com/cblop/live-cljs](https://github.com/cblop/live-cljs)
+
+---
+
+# Challenges
+
+- Change the colours of the ball and blocks
+- Change the ball to something else
+- Make the ball (or whatever) shoot lasers
+- ...etc
 
 ---
 class: center, middle, inverse
 
-# So, why would I use it?
+# Now for something a bit more advanced
 
 ---
 
-# CLJS for web dev
+# Entity-Component-System
 
-- Clojure can be concurrent (thanks to JVM)
-- CLJS can't (Javascript), but still has advantages
-- can use Clojure server-side, CLJS client-side
-- great instant feedback workflow
-- still all a bit experimental, though
-
----
-
-# CLJS and React
-
-- Facebook made this library called React
-- client-side with React and Om
-- no need to worry about DOM elements, build stuff out of components
-- Om is hella fast due to immutability
+- Composition instead of inheritance
+- Attempts to avoid complex class hierarchies
+- Defines functionality through separate components
+- Each game object is defined by a bunch of components
 
 ---
 
-# So, why use Clojurescript?
+# Entity-Component-System
 
-- Expand your knowledge
-- Functional is the future
-- Great community
-- Great tools
-- Rich Hickey
+- Entity: just a unique ID and a list of components
+- Component: describes a piece of behaviour/appearance/functionality. Only holds data, no methods
+- System: kind of like a draw/update loop, but runs on every entity with a matching component to that system
 
 ---
-class: inverse
 
-# Learning resources
+# Example: collision detection
 
-- Clojure for the Brave and True: [braveclojure.com]()
-- Light Table CLJS tutorial: [github.com/swannodette/lt-cljs-tutorial]()
-- Modern CLJS: [github.com/magomimmo/modern-cljs]()‎
+- Entities: a bunch of unique IDs with components
+- Components: (e.g physical and visible)
+- System: iterates through all entities that have a physical component, detects collisions, generates events
+- Other examples: drawing, damage, sound, etc
 
 ---
-class: center, middle, inverse
+
+# Chocolatier game engine
+
+- Clojurescript running the pixi.js rendering engine
+- Entity-Component-System design
+- [github.com/alexkehayias/chocolatier](https://github.com/alexkehayias/chocolatier)
+
+---
+
+# Challenges
+
+- get it running!
+- live update the bunny's speed
+- change the bunny to something else
+- implement ground, gravity
+- get the bunny to jump
+
+---
+
+class: middle, inverse
 
 # Questions
 
-Slides online at [cblop.github.io/clojurescript-talk]()
-Email me at: [matt.thompson@sysemia.co.uk]()
-
+- Slides online at [cblop.github.io/clojure-dojo-1](https://cblop.github.io/clojure-dojo-1)
+- Web: [bristolclojurians.org](http://bristolclojurians.org)
+- Group: [https://groups.google.com/forum/#!forum/bristolclojurians](https://groups.google.com/forum/#!forum/bristolclojurians)
+- Twitter: [@BristolClojure](http://twitter.com/BristolClojure)
 
 
     </textarea>
