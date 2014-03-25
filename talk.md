@@ -209,6 +209,8 @@ class: inverse
 
 ---
 
+# Bristol Clojure
+
 class: middle, inverse
 
 - Slides online at [cblop.github.io/clojure-dojo-1](https://cblop.github.io/clojure-dojo-1)
