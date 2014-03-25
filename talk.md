@@ -18,24 +18,9 @@ layout: false
 - Love tinkering with odd languages
 
 ---
-
 class: center, middle, inverse
 
-# What is it, and why should I care?
-
----
-
-# Clojurescript: what is it?
-
-- Compiles to Javascript
-- Dialect of Lisp (Clojure)
-- Can use JS libraries
-- Uses Google's closure (not Clojure) compiler
-
----
-class: center, middle, inverse
-
-# What's Clojure, then?
+# What's Clojure?
 
 ---
 # Clojure
@@ -46,6 +31,21 @@ class: center, middle, inverse
 - Encourages *immutable* data structures
 - This makes it ideal for concurrency
 - Very simple syntax
+
+---
+class: center, middle, inverse
+
+# What's Clojurescript?
+
+---
+
+# Clojurescript: what is it?
+
+- Compiles to Javascript
+- Dialect of Lisp (Clojure)
+- Can use JS libraries
+- Uses Google's closure (not Clojure) compiler
+
 
 ---
 class: inverse
@@ -93,11 +93,10 @@ class: center, middle, inverse
 # Light Table
 
 - A new editor written in Clojurescript
-- Inspired by a talk called "[Inventing on Principle](vimeo.com/36579366)" by Bret Victor
+- Inspired by a talk called "[Inventing on Principle](http://vimeo.com/36579366)" by Bret Victor
 - Built for "live coding"
 - In very early alpha
 - Also supports JS, Python (right now), but is designed for Clojure(script)
-- Supports source maps!
 
 ---
 class: center, middle, inverse
@@ -111,23 +110,6 @@ class: center, middle, inverse
 - This demo was made by Chris Granger, creator of Light Table
 - Play with it online at [bristolclojure.herokuapp.com](http://bristolclojure.herokuapp.com)
 - Hack at the code: [github.com/cblop/live-cljs](https://github.com/cblop/live-cljs)
-
----
-
-# CLJS Steps
-
-- Leiningen
-- cljsbuild
-- Light Table (or your favourite editor)
-
----
-
-# Challenges
-
-- Change the colours of the ball and blocks
-- Change the ball to something else
-- Make the ball (or whatever) shoot lasers
-- ...etc
 
 ---
 
@@ -176,6 +158,14 @@ class: center, middle, inverse
 
 ---
 
+# CLJS Steps
+
+- Leiningen
+- cljsbuild
+- Light Table (or your favourite editor)
+
+---
+
 # Challenges
 
 - get it running!
@@ -183,6 +173,13 @@ class: center, middle, inverse
 - change the bunny to something else
 - implement ground, gravity
 - get the bunny to jump
+
+---
+
+# Tasks
+
+- Beginner-intermediate: play with ball game demo, do 4clojure.com in Light Table
+- Intermediate-advanced: play with Chocolatier engine
 
 ---
 
