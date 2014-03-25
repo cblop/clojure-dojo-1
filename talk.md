@@ -174,8 +174,8 @@ class: center, middle, inverse
 
 # Next Dojo - ideas?
 
-- Om
-- Web dev
+- Om/web dev
+- Quil
 - Overtone
 - Session
 - Data science
