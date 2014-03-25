@@ -172,12 +172,22 @@ class: center, middle, inverse
 
 ---
 
-class: middle, inverse
+# Next Dojo - ideas?
 
-# Questions
+- Om
+- Web dev
+- Overtone
+- Session
+- Data science
+- Project Euler/4Clojure/SICP
+- Light Table plugins
+
+---
+
+class: middle, inverse
 
 - Slides online at [cblop.github.io/clojure-dojo-1](https://cblop.github.io/clojure-dojo-1)
 - Web: [bristolclojurians.org](http://bristolclojurians.org)
-- Group: [https://groups.google.com/forum/#!forum/bristolclojurians](https://groups.google.com/forum/#!forum/bristolclojurians)
+- Group: [groups.google.com/forum/#!forum/bristolclojurians](https://groups.google.com/forum/#!forum/bristolclojurians)
 - Twitter: [@BristolClojure](http://twitter.com/BristolClojure)
 
