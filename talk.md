@@ -114,12 +114,26 @@ class: center, middle, inverse
 
 ---
 
+# CLJS Steps
+
+- Leiningen
+- cljsbuild
+- Light Table (or your favourite editor)
+
+---
+
 # Challenges
 
 - Change the colours of the ball and blocks
 - Change the ball to something else
 - Make the ball (or whatever) shoot lasers
 - ...etc
+
+---
+
+# Learning exercises
+
+Go to [4clojure.com](https://www.4clojure.com) to learn some Clojure!
 
 ---
 class: center, middle, inverse
@@ -181,6 +195,17 @@ class: center, middle, inverse
 - Data science
 - Project Euler/4Clojure/SICP
 - Light Table plugins
+
+---
+
+class: inverse
+
+# Learning resources
+
+- Clojure for the Brave and True: [braveclojure.com](http://braveclojure.com)
+- Light Table CLJS tutorial: [github.com/swannodette/lt-cljs-tutorial](https://github.com/swannodette/lt-cljs-tutorial)
+- Modern CLJS: [github.com/magomimmo/modern-cljs](https://github.com/magomimmo/modern-cljs)
+- 4clojure: [4clojure.com](https://www.4clojure.com)
 
 ---
 
