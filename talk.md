@@ -208,7 +208,7 @@ class: inverse
 - 4clojure: [4clojure.com](https://www.4clojure.com)
 
 ---
-class: middle, inverse
+class: inverse
 
 # Bristol Clojure
 
